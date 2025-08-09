@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app>
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carteira de Estudante</title>
+    <link href="../../Content/app/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../Content/app/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../../Content/app/css/estilos.css" rel="stylesheet" />
+    <link href="../../Content/app/css/estilos-ingrid.css" rel="stylesheet" />
+    <link href="../../Content/app/css/flickity-docs.css" rel="stylesheet" />
+    <link href="../../Content/app/css/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
+    <link href="../../Content/css/kendo/kendo.common-bootstrap.min.css" rel="stylesheet" />
+    <link href="../../Content/app/css/bootstrap-datetimepicker.css" rel="stylesheet" />
+    <link href="../../Content/app/css/bootstrap-datepicker.css" rel="stylesheet" />
+    <link href="../../Content/app/css/bootstrap-datepicker3.standalone.min.css" rel="stylesheet" />
+    <link href="../../Content/app/css/bootstrap-datepicker3.min.css" rel="stylesheet" />
+    <link href="../../Scripts/plugins/ladda/ladda-themeless.min.css" rel="stylesheet" />
+
+    <script type="text/javascript">
+        var appInsights = window.appInsights || function (a) {
+            function b(a) { c[a] = function () { var b = arguments; c.queue.push(function () { c[a].apply(c, b) }) } } var c = { config: a }, d = document, e = window; setTimeout(function () { var b = d.createElement("script"); b.src = a.url || "https://az416426.vo.msecnd.net/scripts/a/ai.0.js", d.getElementsByTagName("script")[0].parentNode.appendChild(b) }); try { c.cookie = d.cookie } catch (a) { } c.queue = []; for (var f = ["Event", "Exception", "Metric", "PageView", "Trace", "Dependency"]; f.length;)b("track" + f.pop()); if (b("setAuthenticatedUserContext"), b("clearAuthenticatedUserContext"), b("startTrackEvent"), b("stopTrackEvent"), b("startTrackPage"), b("stopTrackPage"), b("flush"), !a.disableExceptionTracking) { f = "onerror", b("_" + f); var g = e[f]; e[f] = function (a, b, d, e, h) { var i = g && g(a, b, d, e, h); return !0 !== i && c["_" + f](a, b, d, e, h), i } } return c
+        }({
+            instrumentationKey: "836e39c3-369f-4ad9-b549-d0d51c6a2b02"
+        });
+
+        window.appInsights = appInsights, appInsights.queue && 0 === appInsights.queue.length && appInsights.trackPageView();
+    </script>
+
+</head>
+
+<body>
+
+    <style>
+        .card {
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-top: 0px;
+            margin-bottom: 0px !important;
+        }
+    </style>
+
+    <div class="row text-center">
+        <div class="col-12">
+            <h3 class="alert alert-success">* DOCUMENTO AUT&#202;NTICO *</h3>
+        </div>
+
+
+        <div class="col-12">
+
+            <div class="panel panel-defaultmb-3">
+                <div class="panel-heading">DOCUMENTO</div>
+                <div class="panel-body">
+                    <h4 class="card-title">Carteira de Estudante Digital</h4>
+                    <p class="card-text horario"></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+
+            <div class="panel panel-defaultmb-3 ">
+                <div class="panel-heading">Aluno</div>
+                <div class="rowtext-center">
+                    <div class="col-4 text-center">
+                        <img src="../../../me.png" style="width:100%;max-width:200px; text-align:center">
+                    </div>
+                    <div class="col-8">
+                        <div class="panel-body">
+                            <h6 class="card-title"><b>Matrícula / Nome</b></h6>
+                            <p class="card-text">202316033 <br /></p>
+                            <p>LUIZ FELIPE VIEIRA AURELIO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="panel panel-defaultmb-3">
+                <div class="panel-heading">Curso</div>
+
+                <div class="rowtext-center">
+
+                    <div class="col-6">
+                        <div class="panel-body">
+                            <h6 class="card-title"><b>Nome</b></h6>
+                            <p class="card-text">Ci&#234;ncia da Computa&#231;&#227;o</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="panel-body">
+                            <h6 class="card-title"><b>Situação</b></h6>
+                            <p class="card-text">Cursando</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="panel-body">
+                            <h6 class="card-title"><b>Período Letivo</b></h6>
+                            <p class="card-text">2025/2</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../../Content/app/js/jquery.mobile-1.4.5.min.js"></script>
+
+    <script src="../../Content/app/js/jquery-3.1.1.min.js"></script>
+
+    <script src="../../Scripts/jquery-ui-1.11.4.min.js"></script>
+
+    <script src="../../Content/app/js/bootstrap.min.js"></script>
+
+    <script src="../../Content/app/js/flickity-docs.min.js"></script>
+
+
+    <script src="../../Scripts/bootstrap-datepicker.min.js"></script>
+
+    <script src="../../Scripts/bootstrap-datepicker.pt-BR.min.js"></script>
+
+    <script src="../../Scripts/kendo/kendo.all.min.js"></script>
+
+    <script src="../../Scripts/kendo/cultures/kendo.culture.pt-BR.min.js"></script>
+
+    <script src="../../Scripts/kendo/kendo.aspnetmvc.min.js"></script>
+
+
+
+    <script src="../../Scripts/kendo/messages/kendo.messages.pt-BR.min.js"></script>
+
+    <script src="../../Content/app/js/jquery.mask.1.14.min.js"></script>
+
+    <script src="../../Scripts/kendo/jszip.min.js"></script>
+
+    <script src="../../Scripts/modernizr-2.8.3.js"></script>
+
+    <script src="../../Scripts/moment.min.js"></script>
+
+    <script src="../../Scripts/bootstrap-datepicker-mobile.js"></script>
+
+    <script src="../../Content/app/js/app.min.js"></script>
+
+    <script src="../../Scripts/plugins/ladda/ladda.min.js"></script>
+
+    <script src="../../Scripts/plugins/ladda/spin.min.js"></script>
+
+    <script src="../../Content/app/js/ui-buttons.min.js"></script>
+
+    <script src="../../Content/app/js/quick-sidebar.min.js"></script>
+
+    <script src="../../Content/app/js/quick-nav.min.js"></script>
+
+
+    <script src="../../Content/js/angular.min.js"></script>
+
+    <script src="../../Content/js/angular-sanitize.min.js"></script>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const now = new Date();
+
+            const city = "Vitória";
+            const optionsWeekday = { weekday: 'long' };
+            const optionsMonth = { month: 'long' };
+
+            const weekday = now.toLocaleDateString('pt-BR', optionsWeekday).charAt(0).toUpperCase() + now.toLocaleDateString('pt-BR', optionsWeekday).slice(1);
+            const day = now.getDate();
+            const month = now.toLocaleDateString('pt-BR', optionsMonth);
+            const year = now.getFullYear();
+            const hours = now.getHours();
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+
+            const formattedTime = `${city}, ${weekday}, ${day} de ${month} de ${year} às ${hours} horas e ${minutes} minutos`;
+            const horarioElement = document.querySelector('.horario');
+            if (horarioElement) {
+                horarioElement.textContent = formattedTime;
+            } else {
+                console.error("Elemento com a classe 'horario' não encontrado.");
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
